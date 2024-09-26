@@ -1,0 +1,5 @@
+com.example.musicapp.test.app-core-1.6.1-0 C:\Users\in2dm3-v\.gradle\caches\transforms-4\f1de0c4edc1152409866ec97a8de439c\transformed\core-1.6.1\res
+com.example.musicapp.test.app-androidTest-1 C:\Users\in2dm3-v\Desktop\MusicApp\MusicApp\app\build\generated\res\resValues\androidTest\debug
+com.example.musicapp.test.app-mergeDebugAndroidTestResources-2 C:\Users\in2dm3-v\Desktop\MusicApp\MusicApp\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.example.musicapp.test.app-mergeDebugAndroidTestResources-3 C:\Users\in2dm3-v\Desktop\MusicApp\MusicApp\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.example.musicapp.test.app-debugAndroidTest-4 C:\Users\in2dm3-v\Desktop\MusicApp\MusicApp\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="darkBlue">#191970</color>
+    <color name="darkGrey">#332F2C</color>
+    <color name="lightBlue">#009AFF</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">MusicApp</string>
+    <string name="nombreCancion">nombre cancion</string>
+    <string name="nombreGrupo">Oasis</string>
+    <string name="tiempoFin">00:00</string>
+    <string name="tiempoInicio">00:00</string>
+    <style name="Base.Theme.MusicApp" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.MusicApp" parent="Base.Theme.MusicApp"/>
+</resources>
