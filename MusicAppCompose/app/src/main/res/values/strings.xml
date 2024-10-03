@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">MusicApp</string>
-    <string name="nombre_cancion">nombre cancion</string>
+    <string name="nombre_cancion">Slide Away</string>
     <string name="nombre_grupo">Oasis</string>
-    <string name="tiempo_inicio">00:00</string>
-    <string name="tiempo_final">00:00</string>
+    <string name="tiempo_inicio">01:38</string>
+    <string name="tiempo_final">06:32</string>
 </resources>
