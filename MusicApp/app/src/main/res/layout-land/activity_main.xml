@@ -7,33 +7,32 @@
     android:layout_height="match_parent"
     android:background="@color/darkGrey"
     tools:context=".MainActivity"
-    tools:layout_editor_absoluteX="6dp"
-    tools:layout_editor_absoluteY="-3dp">
+    tools:layout_editor_absoluteX="-2dp"
+    tools:layout_editor_absoluteY="-146dp">
 
     <ImageButton
         android:id="@+id/botonVerLetra"
-        android:layout_width="82.dp"
-        android:layout_height="69.dp"
+        android:layout_width="59.dp"
+        android:layout_height="59.dp"
         android:background="@drawable/roundcorner"
-        app:layout_constraintBottom_toTopOf="@+id/barraVolumen"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/imageDisco"
+        app:layout_constraintEnd_toStartOf="@+id/divider"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/botonVerLista"
-        app:layout_constraintTop_toBottomOf="@+id/barraDuraccion"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/ic_menu_sort_by_size"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
         android:id="@+id/botonVerLista"
-        android:layout_width="82.dp"
-        android:layout_height="69.dp"
-        android:layout_marginTop="100dp"
+        android:layout_width="59.dp"
+        android:layout_height="59.dp"
         android:background="@drawable/roundcorner"
-        app:layout_constraintBottom_toTopOf="@+id/barraVolumen"
+        app:layout_constraintBottom_toTopOf="@+id/imageDisco"
         app:layout_constraintEnd_toStartOf="@+id/botonVerLetra"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/botonCompartir"
-        app:layout_constraintTop_toBottomOf="@+id/barraDuraccion"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/ic_menu_add"
         tools:ignore="SpeakableTextPresentCheck" />
 
@@ -42,22 +41,20 @@
         android:layout_width="1dp"
         android:layout_height="599dp"
         android:background="?android:attr/listDivider"
-        app:layout_constraintEnd_toStartOf="@+id/botonCompartir"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageDisco"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="1dp" />
 
     <ImageButton
         android:id="@+id/botonCompartir"
-        android:layout_width="82.dp"
-        android:layout_height="69.dp"
-        android:layout_marginTop="100dp"
+        android:layout_width="59.dp"
+        android:layout_height="59.dp"
         android:background="@drawable/roundcorner"
-        app:layout_constraintBottom_toTopOf="@+id/barraVolumen"
+        app:layout_constraintBottom_toTopOf="@+id/imageDisco"
         app:layout_constraintEnd_toStartOf="@+id/botonVerLista"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/divider"
-        app:layout_constraintTop_toBottomOf="@+id/barraDuraccion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/ic_menu_share"
         tools:ignore="SpeakableTextPresentCheck" />
 
@@ -65,14 +62,13 @@
         android:id="@+id/botonPlay"
         android:layout_width="82.dp"
         android:layout_height="69.dp"
-        android:layout_marginTop="50dp"
         android:background="@drawable/roundcorner"
         android:contentDescription="@string/app_name"
-        app:layout_constraintBottom_toTopOf="@+id/barraDuraccion"
+        app:layout_constraintBottom_toTopOf="@+id/barraVolumen"
         app:layout_constraintEnd_toStartOf="@+id/buttonSiguiente"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/buttonAnterior"
-        app:layout_constraintTop_toBottomOf="@+id/textCancion"
+        app:layout_constraintTop_toBottomOf="@+id/barraDuraccion"
         app:srcCompat="@android:drawable/ic_media_play"
         tools:ignore="DuplicateClickableBoundsCheck" />
 
@@ -90,37 +86,40 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/volumenIcon"
-        app:layout_constraintTop_toBottomOf="@+id/botonVerLetra" />
+        app:layout_constraintTop_toBottomOf="@+id/botonPlay" />
 
     <ImageView
         android:id="@+id/volumenIcon"
-        android:layout_width="65dp"
-        android:layout_height="71dp"
+        android:layout_width="51dp"
+        android:layout_height="61dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/barraVolumen"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/divider"
-        app:layout_constraintTop_toBottomOf="@+id/botonCompartir"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAnterior"
         app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
 
     <ImageView
         android:id="@+id/imageDisco"
-        android:layout_width="477dp"
-        android:layout_height="580dp"
-        app:srcCompat="@drawable/discoimagen"
-        tools:layout_editor_absoluteX="7dp"
-        tools:layout_editor_absoluteY="13dp" />
+        android:layout_width="472dp"
+        android:layout_height="462dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/divider"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botonVerLetra"
+        app:srcCompat="@drawable/discoimagen" />
 
     <ImageButton
         android:id="@+id/buttonSiguiente"
         android:layout_width="82.dp"
         android:layout_height="69.dp"
-        android:layout_marginTop="50dp"
         android:background="@drawable/roundcorner"
-        app:layout_constraintBottom_toTopOf="@+id/barraDuraccion"
+        app:layout_constraintBottom_toTopOf="@+id/barraVolumen"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/botonPlay"
-        app:layout_constraintTop_toBottomOf="@+id/textCancion"
+        app:layout_constraintTop_toBottomOf="@+id/barraDuraccion"
         app:srcCompat="@android:drawable/ic_media_ff"
         tools:ignore="SpeakableTextPresentCheck" />
 
@@ -128,25 +127,23 @@
         android:id="@+id/buttonPause"
         android:layout_width="82.dp"
         android:layout_height="69.dp"
-        android:layout_marginTop="50dp"
         android:background="@drawable/roundcorner"
         android:contentDescription="@string/app_name"
         android:visibility="invisible"
-        app:layout_constraintBottom_toTopOf="@+id/barraDuraccion"
+        app:layout_constraintBottom_toTopOf="@+id/barraVolumen"
         app:layout_constraintEnd_toStartOf="@+id/buttonSiguiente"
         app:layout_constraintStart_toEndOf="@+id/buttonAnterior"
-        app:layout_constraintTop_toBottomOf="@+id/textCancion"
+        app:layout_constraintTop_toBottomOf="@+id/barraDuraccion"
         app:srcCompat="@android:drawable/ic_media_pause" />
 
     <TextView
         android:id="@+id/textCancion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="50dp"
         android:text="@string/nombreCancion"
         android:textColor="@color/white"
         android:textSize="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/buttonAnterior"
+        app:layout_constraintBottom_toTopOf="@+id/barraDuraccion"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/divider"
@@ -158,18 +155,17 @@
         android:layout_height="69.dp"
         android:background="@drawable/roundcorner"
         android:contentDescription="@string/app_name"
-        app:layout_constraintBottom_toTopOf="@+id/barraDuraccion"
+        app:layout_constraintBottom_toTopOf="@+id/barraVolumen"
         app:layout_constraintEnd_toStartOf="@+id/botonPlay"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/divider"
-        app:layout_constraintTop_toBottomOf="@+id/textCancion"
+        app:layout_constraintTop_toBottomOf="@+id/barraDuraccion"
         app:srcCompat="@android:drawable/ic_media_rew" />
 
     <TextView
         android:id="@+id/textGrupo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="-80dp"
         android:text="@string/nombreGrupo"
         android:textColor="@color/white"
         android:textSize="25dp"
@@ -183,43 +179,43 @@
         android:id="@+id/barraDuraccion"
         android:layout_width="430dp"
         android:layout_height="22dp"
-        android:layout_marginBottom="100dp"
         android:max="100"
         android:maxHeight="3dp"
         android:minHeight="3dp"
         android:progress="25"
         android:progressDrawable="@drawable/volume_seekbar"
         android:thumbTint="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/botonVerLetra"
+        app:layout_constraintBottom_toTopOf="@+id/botonPlay"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/divider"
-        app:layout_constraintTop_toBottomOf="@+id/buttonSiguiente" />
+        app:layout_constraintTop_toBottomOf="@+id/textCancion" />
 
     <TextView
         android:id="@+id/textTiempoInicio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="150dp"
-        android:layout_marginBottom="80dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="300dp"
         android:text="@string/tiempoInicio"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/botonCompartir"
+        app:layout_constraintBottom_toTopOf="@+id/barraDuraccion"
         app:layout_constraintEnd_toStartOf="@+id/textTiempoFin"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/divider"
-        app:layout_constraintTop_toBottomOf="@+id/barraDuraccion" />
+        app:layout_constraintTop_toBottomOf="@+id/textCancion" />
 
     <TextView
         android:id="@+id/textTiempoFin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="158dp"
-        android:layout_marginBottom="80dp"
+        android:layout_marginTop="40dp"
         android:text="@string/tiempoFin"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/botonVerLetra"
+        app:layout_constraintBottom_toTopOf="@+id/barraDuraccion"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/textTiempoInicio"
-        app:layout_constraintTop_toBottomOf="@+id/barraDuraccion" />
+        app:layout_constraintTop_toBottomOf="@+id/textCancion" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
